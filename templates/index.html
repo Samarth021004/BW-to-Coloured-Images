@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black and White Image Colorizer</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Black & White Image Colorizer</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Upload and Colorize</button>
+        </form>
+        <div class="image-container">
+            {% if original %}
+            <div>
+                <h3>Original Image:</h3>
+                <img src="{{ url_for('static', filename='uploads/' + original) }}" alt="Original Image">
+            </div>
+            <div>
+                <h3>Colorized Image:</h3>
+                <img src="{{ url_for('static', filename='uploads/' + colorized) }}" alt="Colorized Image">
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
