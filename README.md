@@ -11,3 +11,7 @@ Download these and store them in model folder
 3. colorization_release_v2.caffemodel: https://www.dropbox.com/s/dx0qvhhp5hbcx7z/colorization_release_v2.caffemodel?dl=1
 
 file no 3 exceeds the max size so havent uplaoded it here , download it and store it in model folder 
+
+Demo Video Link 
+
+https://drive.google.com/file/d/1_SsE6wIxIDt-T05Fh5EeZwPJG5KtGvsj/view?usp=drive_link
